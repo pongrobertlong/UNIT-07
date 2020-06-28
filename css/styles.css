@@ -51,6 +51,12 @@ header {
   width: 100%;
 }
 
+.headerText {
+  font-weight: 100;
+  font-family: sans-serif;
+
+}
+
 .bell-icon {
   width: 25px;
   height: 25px;
@@ -651,7 +657,7 @@ input:checked + .slider:after {
   }
 
   .nav-link {
-    margin-top: 10px
+    margin-top: 10px;
   }
 
   .nav-active {
