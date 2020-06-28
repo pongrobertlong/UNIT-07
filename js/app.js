@@ -18,6 +18,8 @@ const cancel = document.getElementById("cancel");
 const profilePublic = document.getElementById("profile-public");
 const sendEmail = document.getElementById("send-email");
 const timeZone = document.getElementById("timezone");
+const navContainer = document.getElementById("main-nav");
+const navLinks = document.getElementsByClassName("nav-link");
 
 const weekly = [
   0,
@@ -74,6 +76,20 @@ window.onclick = (e) => {
   }
 };
 
+/*************************************/
+/*            Nav Active             */
+/*************************************/
+
+for (let i = 0; i < navLinks.length; i++) {
+  navLinks[i].addEventListener("click", (e) => {
+    const navButton = e.currentTarget;
+    const current = document.getElementsByClassName("nav-active");
+    if (current.length > 0) {
+      current[0].className = current[0].className.replace(" nav-active", "");
+    }
+    navButton.className += " nav-active";
+  });
+}
 /***************************************/
 /*            Alert Banner             */
 /***************************************/
@@ -403,8 +419,6 @@ autocomplete(userField, newMemebers);
 /*************************************/
 /*     Local Storage for Settings    */
 /*************************************/
-
-console.log(timeZone.length);
 
 //Save Function
 //Send Items to Local Storage

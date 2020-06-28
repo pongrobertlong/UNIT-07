@@ -130,12 +130,19 @@ nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 15px;
 }
 
 nav img {
   width: 25px;
   height: 25px;
+}
+
+.nav-link {
+  padding: 10px;
+}
+
+.nav-active {
+  border-top: 2px solid #82cb8b;
 }
 
 /***********************/
@@ -643,12 +650,21 @@ input:checked + .slider:after {
     padding: 25px 5px;
   }
 
+  .nav-link {
+    margin-top: 10px
+  }
+
+  .nav-active {
+    border-top: 0;
+    border-left: 2px solid #82cb8b;
+  }
+
   /***********************/
   /******* Charts ********/
   /***********************/
 
   .traffic-container {
-    width: 95%;
+    width: 90%;
     margin: auto;
   }
 
