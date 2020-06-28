@@ -446,11 +446,6 @@ save.addEventListener("click", () => {
 //Load from Local Storage
 load();
 
-//Timezone display on load
-window.onload = () => {
-  timeZone.selectedIndex = 0;
-};
-
 //Cancel Local Storage, Reset Checked and Timezone
 cancel.addEventListener("click", () => {
   timeZone.selectedIndex = 0;
