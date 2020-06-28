@@ -54,7 +54,6 @@ header {
 .headerText {
   font-weight: 100;
   font-family: sans-serif;
-
 }
 
 .bell-icon {
@@ -353,6 +352,11 @@ li {
 .members-text {
   text-align: center;
   margin: 15px;
+}
+
+.email {
+  color: #7477bf;
+  text-decoration: none;
 }
 
 /***********************/
