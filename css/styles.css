@@ -443,7 +443,7 @@ li {
   width: 80%;
   padding: 10px;
   margin: auto;
-  animation: fadeInMessage linear 2s forwards;
+  animation: fadeInMessage linear 1.5s forwards;
   border-radius: 5px;
   z-index: 1;
 }
@@ -890,8 +890,13 @@ input:checked + .slider:after {
     transform: translateY(-3px);
   }
 
+  50% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
   100% {
     opacity: 0;
-    transform: translateY(0px);
+    transform: translateY(-3px);
   }
 }
